@@ -1,0 +1,190 @@
+/* Simple Responsive Framework. */
+.row {        /* Creates a Row */
+ width: 100%; /* The elements total width will be 100% of its containing block plus any horizontal margin, padding and border */ 
+
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) { /* Media Query Sets a threshold for the responsive design, in this case its tailored towards large devices of that 1200 pixel range */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 { /* Creates 12 columns each of a width 1/12 of the screen*/
+    float: left; /*Moves the elements to the left side of the parent element, e.g. floating the columns to the original media query????? */
+
+  }
+  .col-lg-1 {
+    width: 8.33%;     /* First column which takes up 1/12 of the width or 8.33% */
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {  /* Media query designed for medium sized devices within pixel range, when browser is shrunk into the range it will "pop into place" */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left; /*Moves the elements to the left side of the parent element, e.g. floating the columns to the original media query????? */
+    /*border: 1px solid green; */ /* Creates a green border around each item */
+    position: relative;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********** Small Devices Onlie (Mobile) **********/
+@media (min-width: 0px) and (max-width: 767px) {  /* Media query designed for medium sized devices within pixel range, when browser is shrunk into the range it will "pop into place" */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left; /*Moves the elements to the left side of the parent element, e.g. floating the columns to the original media query????? */
+    /*border: 1px solid green; */ /* Creates a green border around each item */
+    position: relative;
+  }
+  .col-sm-1 {
+    width: 8.33%;
+  }
+  .col-sm-2 {
+    width: 16.66%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-5 {
+    width: 41.66%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33%;
+  }
+  .col-sm-8 {
+    width: 66.66%;
+  }
+  .col-sm-9 {
+    width: 74.99%;
+  }
+  .col-sm-10 {
+    width: 83.33%;
+  }
+  .col-sm-11 {
+    width: 91.66%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;   /* Allows a straightforward sizing model that alot of frameworks use */
+}
+h1 {
+  margin-bottom: 15px; /* Alters margin on bottom, when content is stacked the larger margin takes precednece, i.e. the margins do not compount like they do with lateral content box models */
+  text-align:  center;
+}
+
+.food-box-container{
+height: 30px;
+
+}
+
+.food-container {                          /* P is a paragraph SELECTOR that contains styling PROPERTIES & their associated VALUES, zero or more declarations are valid. A collection of rules is called a style sheet. */
+  border: 1px solid black;  /* Adds a pixel black border to p box */
+  background-color: gray;
+  height: auto;     /* Sets a height limit for the block level element to affect */
+  margin:  10px;
+  font-family: Helvetica; /* Chooses a Font, every computer is loaded with sans & sans serif */
+  color: white; /* This sets the color of the actual text */
+  overflow:  hidden;
+  padding-bottom: 10px;
+}
+
+.food-label{
+	background:  yellow;
+	border: 1px solid black; 
+	width:  120px;
+	height: 40px;
+	float:  right;
+	color:  black; /* Changes color of the text */
+	text-align: center; /* Moves text to the center of its container element*/
+	padding-top: 2px;
+	font-size: 16pt;
+
+}
+
+.chicken-label{
+	background-color: #EC4875;
+}
+
+.beef-label{
+ background-color: #B4150E;
+}
+
+.sushi-label{
+	background-color: #C6DA01;
+}
+
